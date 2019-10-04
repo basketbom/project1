@@ -253,7 +253,7 @@ def handle_postback(event):
 def handle_beacon(event):
     line_bot_api.reply_message(
         event.reply_token,
-        TextSendMessage(text='Got beacon event. hwid=' + event.beacon.hwid))
+        TextSendMessage(text='Got 00 beacon event. hwid=' + event.beacon.hwid))
 
 if __name__ == "__main__":
     app.run(host='0.0.0.0')
